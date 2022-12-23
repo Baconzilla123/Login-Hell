@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Completely Normal Login Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="./css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="head">Reset Password</h1>
+            <p>Firstly, What is a Password?</p>
+            <div class="def">
+                <h2>Password</h2>
+                <text class="subhead">Noun <i>/ˈpɑːswəːd/</i></text>
+                <text>a secret word or phrase that must be used to gain admission to a place.</text>
+                <text>"if you don't know the password you can't come in"</text> 
+                <text class="light">(Definition from Google.com)</text>
+            </div>
+            <div class="para">
+                <p>Ok now for the Reset...</p>
+                <text>For security Purposes you must verify your email address to reset</text>
+                <input type="email" name="Email" id="Email" placeholder="Email">
+                <label class="wrongpass" id="wrongmail"></label>
+            </div>
+            
+                   
+                        
+                        
+            
+            <a class="iforgor" href="./phone.html">Try Phone Verification</a>
+            <button class="email" onclick="mailError()">Verify</button>
+        </div>
+    </div>
+</body>
+    <script>
+        function mailError() {
+            var logincont = document.getElementById("wrongmail")
+            logincont.innerHTML = "Sorry, Our Email Servers Are Currently Down For Maintenance..."
+        }
+    </script>
+
+</html>

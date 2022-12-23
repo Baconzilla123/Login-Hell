@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Completely Normal Login Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="./css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="head">Reset Password</h1>
+            <p>Firstly, What is a Password?</p>
+            <div class="def">
+                <h2>Password</h2>
+                <text class="subhead">Noun <i>/ˈpɑːswəːd/</i></text>
+                <text>a secret word or phrase that must be used to gain admission to a place.</text>
+                <text>"if you don't know the password you can't come in"</text> 
+                <text class="light">(Definition from Google.com)</text>
+            </div>
+            <div class="para">
+                <p>Ok now for the Reset...</p>
+                <text>For security Purposes you must verify your phone number to reset</text>
+                <input type="text" name="Phone" id="Phone" placeholder="Phone Number">
+                <label class="wrongpass" id="wrongphone"></label>
+            </div>
+            
+                   
+                        
+                        
+            
+            <a class="iforgor">I Give Up</a>
+            <button class="email" onclick="phoneError()">Verify</button>
+        </div>
+    </div>
+</body>
+    <script>
+        function phoneError() {
+            var logincont = document.getElementById("wrongphone")
+            logincont.innerHTML = "Phone Verification Successful!"
+            window.location.href = "./resetfrthistime.html";
+        }
+    </script>
+
+</html>

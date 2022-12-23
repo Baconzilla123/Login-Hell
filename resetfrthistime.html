@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Completely Normal Login Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="./css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="head">Password Reset</h1>
+            <form>
+                <input type="password" name="Password1" id="Password1" placeholder="Password">
+                <label class="wrongpass" id="wrongpass"></label>
+            </form>
+
+            
+            <button class="finalreset" onclick="oldpass()">Reset</button>
+        </div>
+    </div>
+</body>
+    <script>
+        function oldpass() {
+            var logincont = document.getElementById("wrongpass")
+            logincont.innerHTML = "New Password May Not Be The Same As Your Old Password..."
+        }
+    </script>
+
+</html>
